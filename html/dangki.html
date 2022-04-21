@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <style>
+    img{
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div id="site_title"><a href="index.html"><img src="../img/logo.png" alt=""></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="sanpham.html">Sản phẩm</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <li><a href="./dangki.html">Đăng kí</a></li>
+                </ul>
+                <span>              
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Gửi</button>
+                        </form>
+                </span>
+            </div>
+        </nav>
+        
+        <div class="clear"></div>
+        <header>
+            <img src="../img/banner.jpg" alt="">
+        </header>
+
+
+        <div class="content">
+            <div class="content2" style="margin: 50px;">
+            <h2 > <i><u>Lí do bạn cần trở thành thành viên của chúng tôi</u> </i> </h2>
+            <p style="text-indent: 30px; font-size: 20px;">Điều chúng ta thấy được đầu tiên khi mua ô tô đó là việc di chuyển trở nên dễ dàng hơn. Bạn muốn đi đâu xa cũng tiện lợi hơn, không cần tốn thời gian gọi taxi. Không những thế chúng ta còn có thể chủ động về mặt thời gian hơn việc thuê xe. Các bạn muốn đi lúc nào đi, muốn về khi nào thì về. Không những thế khi có việc khẩn cấp bạn cũng có thể nhanh chóng di chuyển đến nơi cần thiết. <br>
+                Dù mưa hay nắng thì mỗi khi ra ngoài bằng ô tô chúng ta cũng không cần phải lo lắng. Đặc biệt mỗi khi trời mưa, gió lạnh, đường bẩn sẽ không còn là nỗi bận tâm của chúng ta nữa. Chúng ta có thể thoải mái diện những bộ đồ đẹp mà không lo bị ướt như khi đi xe máy. Trời mưa chúng ta cũng có thể đi đón trẻ em mà không lo bé bị ốm do dính mưa. Không thể không nói, việc mua ô tô là một sự lựa chọn vô cùng tuyệt vời mỗi khi trời mưa gió. <br>
+                Ô nhiễm không khí ngày một nghiêm trọng. Khói bụi, nắng mưa sẽ ảnh hưởng trực tiếp đến sức khỏe của chúng ta cũng như gia đình.Khói bụi có thể gây ung thư và các loại bệnh về đường hô hấp. Trẻ nhỏ có hệ miễn dịch yếu, hít phải nhiều khói bụi có thể ảnh hưởng đến hệ hô hấp. Mua ô tô để đi làm, đưa đón ông bà, bố mẹ, con cái cũng là một cách đảm bảo sức khỏe cho cả gia đình. <br>
+                Sử dụng xe máy quá nhiều khiến môi trường ngày càng ô nhiễm. Vì thế thay vì mỗi người dùng một chiếc xe máy, cả nhà chúng ta có thể đi chơi trên cùng một chiếc ô tô. Điều này không chỉ giảm lượng khí thải một cách đáng kể. Hiện nay đã có ô tô sử dụng nguyên liệu sạch, sử dụng năng lượng mặt trời. Nếu chúng ta lựa chọn ô tô, đặc biệt là mua ô tô dùng nguyên liệu sạch thì có nghĩa là chúng ta đang bảo vệ môi trường. 
+            </p>
+            <img src="../img/1.jpg" alt="">
+            
+        </div>
+              <button type="submit" class="btn btn-success" id="btn2" style="margin-left:600px; margin-bottom: 30px; height: 50px; width: 200px;">Đăng kí</button>
+              
+              <div class="modal fade" role="dialog" id="myModal">
+                <div class="modal-dialog" style="margin-top:10px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" style="margin-top: 10px;" role="form">
+                                <label for="Name" class="control-label col-xs-3">Họ tên</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="Name" class="form-control">
+                                    <span class="text-danger" id="tbName">*</span>
+                                </div>
+    
+                                <label for="Ao" class="control-label col-xs-3">Email</label>
+                                <div class="col-xs-9" style="margin-bottom:10px;">
+                                    <input type="text" id="Ao" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbAo">*</span>
+                                </div>
+                                <label for="Ao" class="control-label col-xs-3">Mật khẩu</label>
+                                <div class="col-xs-9" style="margin-bottom:10px;">
+                                    <input type="text" id="Ao" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbAo">*</span>
+                                </div>
+    
+                                <label for="DC" class="control-label col-xs-3">Địa chỉ</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="DC" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbDc">*</span>
+                                </div>
+    
+                                <label for="NTT" class="control-label col-xs-3">Ngày sinh nhật</label>
+                                <div class="col-xs-9">
+                                    <input type="date" id="NTT" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbNTT">*</span>
+                                </div>
+    
+                                <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="SDT" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbSDT">*</span>
+                                </div>
+    
+                                <label for="ADD" class="control-label col-xs-3">Ảnh đại diện</label>
+                                <div class="col-xs-9">
+                                    <input type="file" id="ADD" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbAdd">*</span>
+                                </div>
+    
+                                <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color:white; background-color:green;width:100%;">Lưu</button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p style="float: left; width: 40%;">
+              Công ty Trường Lữ<br>
+              Địa chỉ:126 Phú Hòa, Bình Dương <br>
+              SĐT:0913xxxxxx <br>
+              Đăng kí kinh doanh ngày :12/5/2003 <br>
+              Đường dây nóng: <br>
+              HOTLINE: 18001811 <br>
+              Email: Truonglu102010@gmail.com</p>
+            
+            <p style="float: right; width: 50%;">Hoạt động kinh doanh của doanh nghiệp gắn liền với ý thức
+               và tinh thần trách nhiệm. Chúng tôi hướng tới mục tiêu chung: 
+               Thông qua công việc mang đến niềm vui và nụ cười cho khách hàng, 
+               suy nghĩ trên lập trường của khách hàng. .</p>
+  
+         </footer>
+     </div>
+ </body>
+ </html>
